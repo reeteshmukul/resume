@@ -84,11 +84,14 @@
 \RequirePackage[skins]{tcolorbox}
 \RequirePackage{fancyhdr}
 \RequirePackage{ifthen}
+\RequirePackage{fontawesome}
+
 
 
 \DeclareUnicodeCharacter{00E9}{\'{e}}
 % Define default accent colors
 \definecolor{basecolor}{HTML}{000066}       %BLUE
+
 
 \ifundef{\@green} {
   \ifundef{\@red} {
@@ -205,6 +208,8 @@
 
 \newcommand\link[2]{\color{linkcolor}\href{#1}{#2}\color{Black} }
 \newcommand\important[1]{\textbf #1}
+\newcommand{\binsection}{}
+
 
 % Create a tag
 % Usage: \cvtag{<tag label>}
